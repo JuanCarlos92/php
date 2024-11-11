@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Presentación</title>
+
+</head>
+<body>
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <nav id="nav" class="responsive">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                            <li><a href="#visualizacion" onclick="seleccionar(this)">VISUALIZACIÓN DE DATOS</a></li>
+                        </ul>
+                    </nav>
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                </div>
+            </header>
+            <div class="presentacion">
+
+                <h2>Explicación de la Aplicación</h2>
+                <p class="funcionamiento">Funcionamiento de la Aplicación</p>
+                <p class="descripcion">[ Consta de tres páginas principales ]</p>
+                <br>
+
+                <p class="apartado">1. Página de Presentación</p>
+                <p class="descripcion">En esta página inicial se presenta el propósito de la aplicación, 
+                    explicando su funcionalidad y cómo puede ser útil para los usuarios. Aquí, los visitantes 
+                    encontrarán un botón que les llevará a la siguiente página para iniciar el proceso de registro</p>
+
+                <p class="apartado">2. Página de Introducción de Datos</p>
+                <p class="descripcion">Esta página permite a los usuarios registrarse introduciendo su nombre y dirección 
+                    de correo electrónico en un formulario sencillo. Una vez completado el formulario, los datos se 
+                    envían a la aplicación, donde se almacenan de forma segura. Tras el envío, el usuario es redirigido 
+                    automáticamente a la siguiente página para visualizar la lista de registros</p>  
+                        
+                <p class="apartado">3. Página de Visualización de Datos</p>
+                <p class="descripcion">EEn esta página, los usuarios pueden ver una lista de todos los registros 
+                    almacenados, que incluye los nombres y direcciones de correo electrónico de aquellos que se han 
+                    dado de alta. Esta funcionalidad permite a los administradores o a los propios usuarios tener un 
+                    acceso rápido y claro a la información recopilada</p> 
+
+                <a href="#Contacto">Ir a Contacto</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
