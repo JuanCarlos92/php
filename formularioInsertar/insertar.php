@@ -15,10 +15,10 @@
         $pvp = $_POST["pvp"];
         $familia = $_POST["familia"];
 
-        $servidor = "127.0.0.1";
-        $usuario = "admin";
-        $bd = "php";
-        $password = "admin";
+        $servidor = "localhost";
+        $usuario = "dwes";
+        $bd = "dwes";
+        $password = "abc1234";
 
         $conexion = mysqli_connect($servidor,$usuario,$password,$bd) or die("Error de conexion");
 

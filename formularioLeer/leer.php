@@ -10,7 +10,7 @@
 
         $familia = $_POST["familia"];
 
-        $servidor = "127.0.0.1";
+        $servidor = "localhost";
         $usuario = "dwes";
         $bd = "dwes";
         $password = "abc1234";
