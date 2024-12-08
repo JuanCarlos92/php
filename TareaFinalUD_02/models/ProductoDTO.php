@@ -1,20 +1,17 @@
 <?php
 
-class ProductoDTO {
+class ProductoDTO
+{
     public $referencia;
     public $nombre;
     public $descripcion;
     public $precio;
     public $descuento;
 
-    public function __construct($referencia, $nombre, $descripcion, $precio, $descuento) {
-        $this->referencia = $referencia;
-        $this->nombre = $nombre;
-        $this->descripcion = $descripcion;
-        $this->precio = $precio;
-        $this->descuento = $descuento;
+    public function __construct()
+    {
     }
-    
+
     public function getReferencia()
     {
         return $this->referencia;

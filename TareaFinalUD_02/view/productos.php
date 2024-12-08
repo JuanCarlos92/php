@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Productos</title>
     <link rel="stylesheet" href="view/css/styles.css">
 </head>
+
 <body>
     <h1>Lista de Productos</h1>
+    <a href="index.php?action=crear_producto">Agregar Nuevo Producto</a>
+    <a href="index.php?action=actualizarProducto">Actualizar Producto</a>
+    <a href="index.php?action=eliminarProducto">Eliminar Producto</a>
+    <a href="index.php">Volver al inicio</a>
     <table>
         <thead>
             <tr>
@@ -30,7 +36,7 @@
             <?php endforeach; ?>
         </tbody>
     </table>
-    <a href="index.php?action=crear_producto">Agregar Nuevo Producto</a>
-    <a href="index.php">Volver al inicio</a>
+
 </body>
+
 </html>

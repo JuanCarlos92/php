@@ -8,6 +8,10 @@
 </head>
 <body>
     <h1>Lista de Comerciales</h1>
+    <a href="index.php?action=crear_comercial">Crear Nuevo Comercial</a>
+    <a href="index.php?action=actualizarComercial">Actualizar Comercial</a>
+    <a href="index.php?action=eliminarComercial">Eliminar Comercial</a>
+    <a href="index.php">Volver al inicio</a>
     <table>
         <thead>
             <tr>
@@ -30,8 +34,5 @@
             <?php endforeach; ?>
         </tbody>
     </table>
-
-    <a href="index.php?action=crear_comercial">Crear Nuevo Comercial</a>
-    <a href="index.php">Volver al inicio</a>
 </body>
 </html>

@@ -6,13 +6,34 @@ class VentaDTO
     public $refProducto;
     public $cantidad;
     public $fecha;
+    public $nombreComercial;
+    public $nombreProducto;
+    public $descripcionProducto;
 
-    public function __construct($codComercial, $refProducto, $cantidad, $fecha)
+
+    public function __construct()
     {
-        $this->codComercial = $codComercial;
-        $this->refProducto = $refProducto;
-        $this->cantidad = $cantidad;
-        $this->fecha = $fecha;
+
+    }
+
+    public function getNombreComercial()
+    {
+        return $this->nombreComercial;
+    }
+
+    public function setNombreComercial($nombreComercial)
+    {
+        $this->nombreComercial = $nombreComercial;
+    }
+
+    public function getNombreProducto()
+    {
+        return $this->nombreProducto;
+    }
+
+    public function setNombreProducto($nombreProducto)
+    {
+        $this->nombreProducto = $nombreProducto;
     }
 
     public function getCodComercial()
@@ -54,6 +75,14 @@ class VentaDTO
     {
         $this->fecha = $fecha;
     }
-}
+    public function getDescripcionProducto()
+    {
+        return $this->descripcionProducto;
+    }
+    public function setDescripcionProducto($descripcionProducto)
+    {
+        $this->descripcionProducto = $descripcionProducto;
+    }
 
+}
 ?>

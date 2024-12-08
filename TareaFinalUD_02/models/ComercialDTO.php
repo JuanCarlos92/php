@@ -8,13 +8,8 @@ class ComercialDTO
     public $hijos;
     public $fNacimiento;
 
-    public function __construct($codigo, $nombre, $salario, $hijos, $fNacimiento)
+    public function __construct()
     {
-        $this->codigo = $codigo;
-        $this->nombre = $nombre;
-        $this->salario = $salario;
-        $this->hijos = $hijos;
-        $this->fNacimiento = $fNacimiento;
     }
 
     public function getCodigo()

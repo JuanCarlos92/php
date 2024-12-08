@@ -16,11 +16,22 @@ class ProductoService
     public function getAll()
     {
         try {
-            // Llama al método del repositorio para obtener todos los productos
-            return $this->productoRepository->getAll();
-            
+
+            return $this->productoRepository->getAll(); // Llama al método del repositorio para obtener todos los productos
+
         } catch (Exception $e) {
             throw new Exception("Error al obtener los productos: " . $e->getMessage());
+        }
+    }
+    //  Obtener consulta ref + nombre + descrip
+    public function getReferencia_Nombre()
+    {
+        try {
+
+            return $this->productoRepository->getReferencia_Nombre(); // Llamar al método del repositorio para obtener ref + nombre + descrip
+
+        } catch (Exception $e) {
+            throw new Exception("Error en el servicio al obtener las ventas: " . $e->getMessage());
         }
     }
 
@@ -28,10 +39,30 @@ class ProductoService
     public function create(ProductoDTO $productoDTO)
     {
         try {
-            // Llama al método del repositorio para crear un producto, pasando un objeto ProductoDTO
-            return $this->productoRepository->create($productoDTO);
+
+            return $this->productoRepository->create($productoDTO); // Llama al método del repositorio para crear
+
         } catch (Exception $e) {
             throw new Exception("Error al crear el producto: " . $e->getMessage());
+        }
+    }
+    public function update(ProductoDTO $productoDTO)
+    {
+        try {
+            return $this->productoRepository->update($productoDTO); // Llama al repositorio para actualizar
+
+        } catch (Exception $e) {
+            throw new Exception("Error al actualizar el producto: " . $e->getMessage());
+        }
+    }
+    public function delete(ProductoDTO $productoDTO)
+    {
+        try {
+            return $this->productoRepository->delete($productoDTO); // Llama al repositorio para eliminar
+
+        } catch (Exception $e) {
+
+            throw new Exception("Error al eliminar el producto: " . $e->getMessage());
         }
     }
 }

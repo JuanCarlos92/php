@@ -16,8 +16,7 @@ class ComercialService
     public function getAll()
     {
         try {
-            // Llama al repositorio para obtener todos los comerciales
-            return $this->comercialRepository->getAll();
+            return $this->comercialRepository->getAll(); // Llama al repositorio para obtener todos los comerciales
 
         } catch (Exception $e) {
             throw new Exception("Error al obtener los comerciales: " . $e->getMessage());
@@ -28,10 +27,28 @@ class ComercialService
     public function create(ComercialDTO $comercialDTO)
     {
         try {
-            // Llama al repositorio para crear un nuevo comercial utilizando el DTO pasado como parámetro
-            return $this->comercialRepository->create($comercialDTO);
+            return $this->comercialRepository->create($comercialDTO); // Llama al repositorio para crear
+
         } catch (Exception $e) {
             throw new Exception("Error al crear el comercial: " . $e->getMessage());
+        }
+    }
+    public function update(ComercialDTO $comercialDTO){
+        try {
+            return $this->comercialRepository->update($comercialDTO); // Llama al repositorio para actualizar
+
+        } catch (Exception $e) {
+            throw new Exception("Error al actualizar el comercial: " . $e->getMessage());
+        }
+    }
+    public function delete(ComercialDTO $comercialDTO)
+    {
+        try {
+            return $this->comercialRepository->delete($comercialDTO); // Llama al repositorio para eliminar
+            
+        } catch (Exception $e) {
+
+            throw new Exception("Error al eliminar el comercial: " . $e->getMessage());
         }
     }
 }

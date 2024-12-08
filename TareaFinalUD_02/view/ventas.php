@@ -8,6 +8,10 @@
 </head>
 <body>
     <h1>Lista de Ventas</h1>
+    <a href="index.php?action=crear_venta">Crear Nueva Venta</a>
+    <a href="index.php?action=actualizarVenta">Actualizar Venta</a>
+    <a href="index.php?action=eliminarVenta">Eliminar Venta</a>
+    <a href="index.php">Volver al inicio</a>
     <table>
         <thead>
             <tr>
@@ -28,9 +32,6 @@
             <?php endforeach; ?>
         </tbody>
     </table>
-
-    <a href="index.php?action=crear_venta">Crear Nueva Venta</a>
-    <a href="index.php">Volver al inicio</a>
 </body>
 </html>
 

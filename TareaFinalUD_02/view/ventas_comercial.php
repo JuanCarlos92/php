@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ventas por Comercial</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Ventas por comercial</title>
+    <link rel="stylesheet" href="view/css/styles.css">
 </head>
+
 <body>
-    <h1>Ventas del Comercial</h1>
 
     <?php if (empty($ventas)): ?>
         <p>No se encontraron ventas para este comercial.</p>
@@ -16,7 +17,9 @@
             <thead>
                 <tr>
                     <th>Código Comercial</th>
+                    <th>Nombre Comercial</th>
                     <th>Referencia Producto</th>
+                    <th>Nombre Producto</th>
                     <th>Cantidad</th>
                     <th>Fecha</th>
                 </tr>
@@ -25,7 +28,9 @@
                 <?php foreach ($ventas as $venta): ?>
                     <tr>
                         <td><?php echo $venta->getCodComercial(); ?></td>
+                        <td><?php echo $venta->getNombreComercial(); ?></td>
                         <td><?php echo $venta->getRefProducto(); ?></td>
+                        <td><?php echo $venta->getNombreProducto(); ?></td>
                         <td><?php echo $venta->getCantidad(); ?></td>
                         <td><?php echo $venta->getFecha(); ?></td>
                     </tr>
@@ -33,7 +38,6 @@
             </tbody>
         </table>
     <?php endif; ?>
-
-    <a href="index.php?action=ventas">Volver a todas las ventas</a>
 </body>
+
 </html>
