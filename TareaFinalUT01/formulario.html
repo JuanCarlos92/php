@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_contact.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/pagina.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js_php/script.js"></script>
+
+    <title>Darse de Alta</title>
+</head>
+
+<body>
+    <section id="pagina">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="index.html" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="formulario.html" class="seleccionado" onclick="seleccionar(this)">INTRODUCIR DATOS</a>
+                            </li>
+                            <li><a href="visualizar_datos.html" onclick="seleccionar(this)">VISUALIZAR DATOS</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </header>
+
+            <div class="formulario">
+                <h3 class="titulo-formulario">Darse de alta</h3>
+                <form action="js_php/persistencia.php" method="post">
+                    <div class="fila mitad">
+                        <input type="text" name="nombre" placeholder="Nombre Completo" class="input-mitad" required>
+                        <input type="text" name="apellido" placeholder="Apellidos" class="input-mitad" required>
+                    </div>
+                    <div class="fila">
+                        <input type="email" name="email" placeholder="Dirección de Email" class="input-email" required>
+                    </div>
+
+                    <input type="submit" value="Enviar Datos" class="btn">
+                </form>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>

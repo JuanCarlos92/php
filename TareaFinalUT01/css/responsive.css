@@ -1,0 +1,77 @@
+/* R E S P O N S I V E */
+
+@media screen and (max-width: 800px) {
+    nav.responsive {
+        display: block;
+        background-color: rgba(0, 0, 0, .8);
+        width: 100%;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        padding: 10px 0;
+    }
+    nav.responsive ul {
+        display: block !important;
+        text-align: center;
+    }
+    nav.responsive ul li {
+        margin: 5px 0;
+    }
+    #pagina .contenido .presentacion {
+        padding-top: 70px;
+        padding: 20px;
+    }
+
+    #pagina .contenido .presentacion h2 {
+        font-size: 36px;
+    }
+
+    #pagina .contenido .presentacion .funcionamiento,
+    #pagina .contenido .presentacion .descripcion,
+    #pagina .contenido .presentacion .apartado {
+        font-size: 16px;
+    }
+    #pagina .contenido .presentacion a {
+        padding: 15px 20px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    nav.responsive {
+        display: block;
+        background-color: rgba(0, 0, 0, .8);
+        width: 100%;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        padding: 0px 0;
+    }
+    nav.responsive ul {
+        display: block !important;
+        text-align: center;
+    }
+    nav.responsive ul li {
+        margin: 5px 0;
+    }
+    #pagina .contenido .presentacion {
+        padding: 10px;
+        padding-top: 50px;
+    }
+
+    #pagina .contenido .presentacion h2 {
+        font-size: 40px;
+    }
+    
+    #pagina .contenido .presentacion .funcionamiento,
+    #pagina .contenido .presentacion .apartado,
+    #pagina .contenido .presentacion .descripcion {
+        font-size: 14px;
+        margin: 10px auto;
+    }
+    #pagina .contenido .presentacion a {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+}

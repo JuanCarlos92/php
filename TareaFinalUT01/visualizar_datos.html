@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_visualizar_datos.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/pagina.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js_php/script.js"></script>
+
+    <title>Visualizar Datos</title>
+</head>
+
+<body>
+    <section id="pagina">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="index.html" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="formulario.html" onclick="seleccionar(this)">INTRODUCIR DATOS</a></li>
+                            <li><a href="visualizar_datos.html" class="seleccionado"
+                                    onclick="seleccionar(this)">VISUALIZAR DATOS</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </header>
+            <div></div>
+            <div class="contenedor-datos">
+                <h2>Lista de datos introducido</h2>
+                <div id="contenido_persistencia">Cargando contenido...</div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

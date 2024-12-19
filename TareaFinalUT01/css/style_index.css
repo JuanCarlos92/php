@@ -1,0 +1,58 @@
+/* P R E S E N T A C I O N  */
+
+#pagina .contenido .presentacion {
+    max-width: 1100px;
+    height: 100vh;
+    margin: auto;
+    padding-top: 50px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#pagina .contenido .presentacion .funcionamiento{
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+#pagina .contenido .presentacion .apartado{
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-style: italic;
+}
+
+#pagina .contenido .presentacion h2 {
+    font-size: 55px;
+    margin-bottom: 25px;
+    text-align: center;
+    text-decoration: underline;
+}
+#pagina .contenido .presentacion .descripcion {
+    max-width: 700px;
+    margin: 25px auto;
+    font-size: 18px;
+    text-align: center;
+}
+
+/*--> BOTON CONTACTO*/
+
+#pagina .contenido .presentacion a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px;
+    padding: 20px 25px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s;
+}
+#pagina .contenido .presentacion a:hover {
+    background-color: #ff5080;
+}
